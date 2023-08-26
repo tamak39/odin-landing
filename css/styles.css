@@ -74,9 +74,26 @@ body,
 }
 
 .content {
-    padding: 1rem;
     flex: auto;
     padding-left: 20vw;
     padding-right: 20vw;
     justify-content: space-between;
 }
+
+.header,
+.footer,
+.top {
+    background-color: #1F2937;
+}
+
+.header,
+.top h1,
+.footer {
+    color: #F9FAF8;
+}
+
+.top p,
+.header a {
+    color: #E5E7Eb;
+    text-decoration: none;
+} 
