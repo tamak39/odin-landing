@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@800&family=Rubik:ital,wght@0,400;0,700;1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,14 +11,38 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: 'Prompt', sans-serif;
+}
+
+a,
+p,
+img,
+h3 {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
 .bigtext {
     color: #F9FAF8;
 }
 
 .smalltext {
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.brightfont {
     color: #E5E7EB;
-    text-decoration: none;
+}
+
+.brightbg {
+    background-color: #E5E7EB;
 }
 
 .darkfont {
@@ -49,6 +76,134 @@ header,
 footer {
     height: 5vh;
 }
+
+.padded {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.extra-padded {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+/* Content */
+
+.first {
+    display: flex;
+    flex: 1;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.left > h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.right {
+    display: flex;
+    width: 100%;
+    background-color: darkcyan;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* second */
+
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second > h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: -24px;
+    margin-bottom: 24px;
+}
+
+.stuff {
+    display: flex;
+    gap: 32px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+}
+
+.item-image {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.item-description {
+    max-width: 150px;
+    text-align: center;
+}
+
+/* third */
+
+.third {
+    flex-direction: column;
+}
+
+.quote {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 12px;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author {
+    text-align: right;
+    padding-right: 5vw;
+    font-size: 24px;
+}
+
+/* fourth */
+
+.call-background {
+    display: flex;
+    flex: 1;
+    background-color: #3882F6;
+    flex-direction: row;
+    align-items: center;
+    padding: 2em 8em;
+    border-radius: 5px;
+}
+
+.call-background > div {
+    margin-right: auto;
+}
+
+button {
+    padding: 6px 2rem;
+    background-color: #3882F6;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Content */
+
 
 footer {
     display: flex;
