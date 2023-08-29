@@ -1,214 +1,57 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
-    box-sizing: border-box;
-    font-family: Verdana, sans-serif;
 }
 
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.header,
-.content > div,
-.footer {
-    padding: 0 15vw;
+.bigtext {
+    color: #F9FAF8;
 }
 
-.content > div {
-    min-height: 50vh;
+.smalltext {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
 }
 
-.header {
-    max-height: 6vh;
-    padding-top: 1rem;
+.darkfont {
+    color: #1F2937;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-}
-
-.top-left,
-.top-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.top-left {
-    align-items: flex-start;
-    gap: 8px;
-}
-
-button {
-    padding: 4px 2rem;
-    background-color: #3882F6;
-    border-radius: 5px;
-}
-
-.top-left > button {
-    border-color: #1F2937;
-    border-style: solid;
-}
-
-.bottom-container > button {
-    border-color: #F9FAF8;
-    border-style: solid;
-}
-
-.top-right > img {
-    flex: 0 0 270px;
-    max-height: 270px;
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.header,
-.top,
-.footer {
+.darkbg {
     background-color: #1F2937;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
-}
-
-.header > h2 {
-    font-size: 24px;
+header > h2 {
     margin-right: auto;
-    color: #F9FAF8;
-}
-
-a,
-.footer,
-.top-left > p,
-button {
-    font-size: 18px;
-    text-decoration: none;
-    color: #E5E7EB;
-}
-
-.mid {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.mid > h2 {
-    margin-top: 80px;
-    margin-bottom: -80px;
-    font-size: 36px;
-    font-weight: 900;
-    color: #1F2937;
-}
-
-.mid-container {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-}
-
-.mid-item > p,
-.mid-item > img {
-    max-width: 160px;
-}
-
-.mid-item > img {
-    border: 5px solid #3882F6;
-    border-radius: 10px;
-}
-
-.mid-item {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    text-align: center;
-    min-width: min-content;
-}
-
-.quote-container {
-    background-color: #E5E7EB;
-    color: #1F2937;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.quote-container > p {
-    font-size: 36px;
-    font-weight: light;
-    font-style: italic;
-    padding: 0 10vw;
-    margin-top: 150px;
-    margin-bottom: -180px;
-}
-
-.quote-container > h3 {
-    align-self: flex-end;
-    margin-right: 5%;
     font-size: 24px;
-    font-weight: bold;
 }
 
-.bottom {
-    align-items: center;
-}
-
-.bottom-container {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    border-radius: 10px;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    display: flex;
-    padding: 3em 9em;
-    align-items: center;
-}
-
-.bottom-container > div {
-    margin-right: auto;
-}
-
-.footer {
+header,
+ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-}
-
-.header,
-.header > ul {
-    display: flex;
-    gap: 1rem;
     list-style: none;
-    align-items: flex-start
+    gap: 1rem;
 }
 
-.content > div {
+header,
+main > div {
+    padding: 0 20vw;
     display: flex;
 }
 
-.content > div > * {
-    flex: 1;
+header,
+footer {
+    height: 5vh;
 }
 
-.footer {
-    max-height: 4vh;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.header,
-.content,
-.content > div,
-.footer {
-    flex: 1;
-}
-
-
-/* How the fuck are you supposed to do this without it becoming
-an absolute fucking shitshow?! */
